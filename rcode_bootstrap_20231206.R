@@ -117,11 +117,9 @@ for(i.boot in 1:n.boot){
 coe.out.all<-rbind(coe.out,coe.boot)
 colnames(coe.out.all)[1:8]<-c("const_all","age_all","age2_all","age3_all","const_sub","age_sub","age2_sub","age3_sub")
 
-
-
 write.table(coe.out.all,file="boot_test.txt",row.names=F)
 
-  
+
   
   
   
